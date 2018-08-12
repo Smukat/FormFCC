@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+p {
+    margin: 0;
+    /*padding: 1em 0;*/
+}
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+label {
+    display: block;
+    margin: 1em;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+    margin-top: 0.8em;
+    display: block;
+    width: 100%;
+}
+
+.subtitles {
+    background-color: #2A88AD;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+.personal-information,
+.preferences {
+    border: 1px solid #257C9E;
+    border-radius: 11px 11px 0 0;
+    box-shadow: 3px 3px 3px #888;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.submit {
+    background-color: #2A88AD;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    display: block;
+
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #2A88AD;
+}
+
+.footer__p {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+    .site {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 34em) {
+    @supports (display: grid) {
+
+        body {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    @supports (display: grid) {
+        body {
+            width: 50%;
+            margin: auto;
+            margin-top: 1em;
+        }
+    }
+
+}

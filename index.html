@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jesica Prades">
+    <meta name="description" content="Survey Form, a web design project for Free Code Camp">
+    <meta name="keywords" content="survey, form, fcc, free, code, camp, web, design, project" >
+    <title>Survey Form</title>
+
+    <!--------------------------------------------
+         EXTERNAL LINKS
+         --------------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--------------------------------------------
+  FORM
+--------------------------------------------->
+<main class="form">
+    <form action="#" method="post">
+        <div class="personal-information">
+            <h2 class="subtitles">Personal Information</h2>
+            <label for="name">Name:
+                <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+            <label for="birthday">Birthday:
+                <input type="date" id="birthday" name="birthday" required></label>
+
+            <label for="role">Current Role:
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="fullTime">Full Time Job</option>
+                    <option value="partTime">Part Time Job</option>
+                    <option value="other">Other</option>
+                </select></label>
+        </div>
+        <div class="preferences">
+            <h2 class="subtitles">Coding Habits</h2>
+            <label for="daysCoding">How many days do you code per week?
+                <select id="daysCoding" name="daysCoding" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select></label>
+
+            <label for="hoursStudy">How many hours do you code per day?
+                <input type="number" id="hoursStudy" name="hoursStudy" min="1" max="99" pattern="[0-9]*" required></label>
+
+            <label>When do you code?
+                <label for="momentDayMornings"><input type="radio" name="momentDay" id="momentDayMornings" value="mornings">Mornings</label>
+                <label for="momentDayAfternoon"><input type="radio" name="momentDay" id="momentDayAfternoon" value="afternoons">Afternoons</label>
+                <label for="momentDayEvening"><input type="radio" name="momentDay" id="momentDayEvening" value="evenings">Evenings</label>
+            </label>
+
+            <label>Would you recommend Free Code Camp?
+                <label for="recommendYes"><input type="radio" name="recommend" id="recommendYes" value="yes">Yes</label>
+                <label for="recommendMaybe"><input type="radio" name="recommend" id="recommendMaybe" value="maybe">Maybe</label>
+                <label for="recommendNo"><input type="radio" name="recommend" id="recommendNo" value="no">No</label>
+            </label>
+            <label for="comments">Any Comments or Suggestions?
+                <textarea id="comments" name="comments" rows="3"></textarea></label>
+
+            <input type="submit" name="Submit" class="submit">
+        </div>
+
+    </form>
+</main>
+
+<!--------------------------------------------
+  FOOTER
+--------------------------------------------->
+<footer class="footer">
+    <p class="footer__p">&copy; Jesica Prades 2018</p>
+</footer>
+<!--------------------------------------------
+  SCRIPTS
+--------------------------------------------->
+
+</body>
+</html>
